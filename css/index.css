@@ -1,0 +1,277 @@
+/* Smooth transitions for all elements */
+* {
+    transition: all 0.3s ease;
+}
+
+body {
+    background-image: url(../img/bg01.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #e4e4e4;
+}
+
+/* Enhance chatbot toggler with subtle animation */
+.chatbot-toggler {
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+    background: linear-gradient(145deg, #8155ff, #6a45d0);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(114, 74, 232, 0.5);
+}
+
+.chatbot-toggler:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(129, 85, 255, 0.6);
+}
+
+.chatbot {
+    position: fixed;
+    right: 35px;
+    bottom: 90px;
+    width: 420px;
+    background: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+}
+
+.chatbot.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.chatbot header {
+    padding: 16px 0;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(145deg, #8155ff, #6a45d0);
+    border-radius: 15px 15px 0 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.chatbox {
+    overflow-y: auto;
+    height: 510px;
+    padding: 30px 20px 100px;
+    scroll-behavior: smooth;
+    background-color: #222;
+}
+
+.chatbox .chat {
+    display: flex;
+    list-style: none;
+    margin-bottom: 15px;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.chatbox .incoming {
+    justify-content: flex-start;
+}
+
+.chatbox .outgoing {
+    justify-content: flex-end;
+}
+
+.chatbox .chat p {
+    padding: 12px 16px;
+    border-radius: 10px;
+    max-width: 75%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chatbox .incoming p {
+    background: #2a2a2a;
+    color: #e4e4e4;
+}
+
+.chatbox .outgoing p {
+    background: #724ae8;
+    color: #fff;
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    background: #2a2a2a;
+    border-top: 1px solid #333;
+    border-radius: 0 0 15px 15px;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-input textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #444;
+    border-radius: 7px;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s;
+    background-color: #333;
+    color: #e4e4e4;
+}
+
+.chat-input textarea:focus {
+    border-color: #724ae8;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(114, 74, 232, 0.2);
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(145deg, #8155ff, #6a45d0);
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.chat-input button:hover {
+    background: linear-gradient(145deg, #8960ff, #7550e0);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(114, 74, 232, 0.3);
+}
+
+.full-height {
+    background: rgba(0, 0, 0, 0.75);
+    background-attachment: fixed;
+    max-height: 100vh;
+    height: 100vh;
+}
+
+.heading-text {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 63px;
+    margin-top: 15%;
+    text-align: center;
+    margin-bottom: 0;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.sub-text2 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease 0.2s;
+    animation-fill-mode: both;
+}
+
+.register-btn {
+    background-color: rgba(114, 74, 232, 0.9);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease 0.4s;
+    animation-fill-mode: both;
+}
+
+.register-btn:hover {
+    background-color: rgba(129, 85, 255, 1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(114, 74, 232, 0.4);
+}
+
+.edoc-logo {
+    color: white;
+    font-weight: bolder;
+    font-size: 22px;
+    padding-left: 20px;
+    animation: fadeInDown 0.5s;
+    letter-spacing: 0.5px;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.edoc-logo-sub {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    animation: fadeInDown 0.5s;
+    transition: all 0.3s;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.nav-item:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: #8155ff;
+    transition: all 0.3s;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover {
+    color: #fff;
+}
+
+.nav-item:hover:after {
+    width: 80%;
+}
+
+.footer-hashen {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    animation: fadeInUp 0.5s;
+    transition: all 0.3s;
+}
+
+.footer-hashen:hover {
+    color: rgba(255, 255, 255, 1);
+}

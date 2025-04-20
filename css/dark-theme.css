@@ -1,0 +1,89 @@
+/* Dark Theme Base */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Container Backgrounds */
+.container, .header-container, .profile-container, .menu {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    border: none;
+}
+
+/* Buttons */
+.btn, .btn-primary, .btn-primary-soft, .login-btn {
+    background-color: #0A76D8;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover, .btn-primary:hover, .login-btn:hover {
+    background-color: #006dd3;
+    transform: scale(1.03);
+}
+
+/* Form Inputs */
+.input-text {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+.input-text::placeholder {
+    color: #999;
+}
+
+/* Headings & Text */
+.header-text, .heading-text, .h1-dashboard, .h3-dashboard, .profile-title, .profile-subtitle, .sub-text {
+    color: #ffffff;
+}
+
+/* Navigation Items */
+.nav-item, .menu-items1, .menu-text, .non-style-link-menu, .menu-btn {
+    color: #d1d1d1;
+    transition: color 0.3s;
+}
+
+.nav-item:hover, .menu-items1:hover, .menu-btn:hover {
+    color: #ffffff;
+}
+
+/* Search Bar */
+.header-searchbar {
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    color: #fff;
+}
+
+/* Dark Modal / Popup */
+.popup {
+    background-color: #1e1e1e;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+}
+
+/* Animations */
+.container, .menu, .dash-body, .header-container, .btn, .popup {
+    animation: transitionIn-Y-over 0.5s ease;
+}
+
+/* Logo & Branding */
+.edoc-logo {
+    color: #00bcd4;
+}
+
+.edoc-logo-sub {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Dashboard Items */
+.dashboard-items {
+    background-color: #2c2c2c;
+    color: #0A76D8;
+    border: 1px solid #444;
+}
