@@ -1,7 +1,6 @@
 # 🏥 Doctor Appointment System
 
-A **Doctor Appointment System** designed to digitize and streamline hospital operations.  
-This web-based platform allows **patients to book appointments**, **doctors to manage their schedules**, and **admins to control all data** effectively.
+A Doctor Appointment System designed to digitize and streamline hospital operations. This web-based platform allows patients to book appointments, doctors to manage their schedules, and admins to control all data effectively. Additionally, the system incorporates AI to recommend the best doctor for a patient based on their symptoms and medical history, ensuring personalized and optimal care for each individual.
 
 ---
 
@@ -12,12 +11,17 @@ This project is a simple yet effective **Hospital Management System** built usin
 ---
 
 ## 🚀 Features
+👨‍⚕️ Patients can book appointments with available doctors.
 
-- 👨‍⚕️ Patients can book appointments with available doctors
-- 📅 Doctors can view all their scheduled appointments upon login
-- 🛠 Admins can manage doctors, patients, and appointment records
-- 🔐 Simple login system for different user roles (Patient, Doctor, Admin)
-- 🖥️ Clean and responsive UI built using HTML & CSS
+📅 Doctors can view all their scheduled appointments upon login.
+
+🛠 Admins can manage doctors, patients, and appointment records.
+
+🔐 Simple login system for different user roles (Patient, Doctor, Admin).
+
+🖥️ Clean and responsive UI built using HTML & CSS.
+
+
 
 ---
 
@@ -27,6 +31,7 @@ This project is a simple yet effective **Hospital Management System** built usin
 - **Backend:** PHP
 - **Database:** MySQL (if used)
 - **Hosting:** XAMPP / Localhost environment
+- **chabbot:** Chatbase.com
 
 ---
 
