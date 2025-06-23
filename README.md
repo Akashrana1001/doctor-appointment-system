@@ -29,7 +29,7 @@ This project is a simple yet effective **Hospital Management System** built usin
 
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Backend:** PHP
-- **Database:** MySQL (if used)
+- **Database:** MySQL 
 - **Hosting:** XAMPP / Localhost environment
 - **chabbot:** Chatbase.com
 
